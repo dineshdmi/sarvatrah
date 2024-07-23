@@ -138,7 +138,11 @@ const ProfilePage = () => {
                                         ) : (
                                             <span>
                                                 {formData.birthday || (
-                                                    <button className="text-blue-500">
+                                                    <button
+                                                        type="button" // Prevent form submission
+                                                        className="text-blue-500"
+                                                        onClick={() => console.log('Add Birthday')}
+                                                    >
                                                         + Add
                                                     </button>
                                                 )}
@@ -162,7 +166,11 @@ const ProfilePage = () => {
                                         ) : (
                                             <span>
                                                 {formData.gender || (
-                                                    <button className="text-blue-500">
+                                                    <button
+                                                        type="button" // Prevent form submission
+                                                        className="text-blue-500"
+                                                        onClick={() => console.log('Add Gender')}
+                                                    >
                                                         + Add
                                                     </button>
                                                 )}
@@ -187,7 +195,11 @@ const ProfilePage = () => {
                                         ) : (
                                             <span>
                                                 {formData.maritalStatus || (
-                                                    <button className="text-blue-500">
+                                                    <button
+                                                        type="button" // Prevent form submission
+                                                        className="text-blue-500"
+                                                        onClick={() => console.log('Add Marital Status')}
+                                                    >
                                                         + Add
                                                     </button>
                                                 )}

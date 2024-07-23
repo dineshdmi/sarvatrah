@@ -7,13 +7,14 @@ import User from './Components/User';
 import Notifications from './Components/Pages/Notifications';
 import './index.css';
 import TopNavbar from './Components/Topnavbar';
-import History from './Components/Booking_History';
+// import History from './Components/Booking_History';
 import About from './Components/Pages/About';
 import Profile from './Components/Pages/Profile';
 import Footer from './Components/Footer'; 
 import Terms from './Components/Pages/Terms';
 import Privacy from './Components/Pages/Privacy';
 import Refund from './Components/Pages/Refund';
+import PageManagement from './Components/Pages/PageManagement';
 
 const App = () => {
   const [sidebar, setSidebar] = useState(false);
@@ -32,7 +33,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/user" element={<User />} />
-            <Route path="/history" element={<History />} />
+            <Route path="/history" element={<PageManagement/>} />
             <Route path="/changepassword" element={<ChangePassword />} />
             <Route path="/notification" element={<Notifications />} />
             <Route path="/profile" element={<Profile />} />
