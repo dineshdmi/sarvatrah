@@ -20,8 +20,8 @@ const PageManagement = () => {
                     className={`w-full h-1/3 ${buttons === 1 ? "bg-sky-400" : ""} hover:font-semibold shadow-lg block rounded-lg mb-2 md:mb-0`}
                     onClick={() => { setButtons(1) }}
                 >
-                    <FontAwesomeIcon icon={faBan} className="inline-block mr-2 h-7 text-2xl" />
-                    <span className="font-medium text-lg">Cancelled</span>
+                    <FontAwesomeIcon icon={faBan} className="inline-block mr-5 h-7 text-2xl" />
+                    <span className="font-medium text-lg mr-1">Cancelled</span>
                 </button>
                 <button
                     className={`w-full h-1/3 ${buttons === 2 ? "bg-sky-400" : ""} hover:font-semibold shadow-lg block rounded-lg`}

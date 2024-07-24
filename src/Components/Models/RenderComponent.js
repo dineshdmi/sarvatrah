@@ -1,17 +1,11 @@
 import React, { useState } from 'react';
-import { HiChevronDown } from 'react-icons/hi'; // Example icon from react-icons
 
 const RenderComponent = ({ index }) => {
     const [activeTab, setActiveTab] = useState(0);
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     const showPanel = (panelIndex, colorCode) => {
         setActiveTab(panelIndex);
         document.documentElement.style.setProperty('--colorCode', colorCode);
-    };
-
-    const handleDropdownToggle = () => {
-        setIsDropdownOpen(!isDropdownOpen);
     };
 
     switch (index) {
@@ -119,25 +113,7 @@ const RenderComponent = ({ index }) => {
                                 <p className='font-thin block'>Great! Looks like you’ve no upcoming bookings.3</p>
                                 <div className="relative">
                                     <button className='w-32 h-12 bg-purple-500 rounded-full block mt-10 hover:bg-red-500'>Plan a Trip</button>
-                                    {/* Dropdown Icon */}
-                                    <HiChevronDown
-                                        onClick={handleDropdownToggle}
-                                        className="absolute top-[10px] left-[260%] cursor-pointer"
-                                    />
                                 </div>
-                                {/* Dropdown Menu */}
-                                {isDropdownOpen && (
-                                    <div className="absolute top-[100px] left-[191%] w-[250px] bg-white shadow-lg border border-gray-300 rounded-lg p-4">
-                                        <p className="font-semibold">Package Details</p>
-                                        <ul className="list-disc pl-5 mt-2">
-                                            <li><strong>Package Name:</strong> Example Package</li>
-                                            <li><strong>Travel Date:</strong> 2024-08-15</li>
-                                            <li><strong>PAX:</strong> 2</li>
-                                            <li><strong>Price:</strong> $500</li>
-                                        </ul>
-                                        <button className="mt-4 w-full bg-red-500 text-white rounded-lg py-2 hover:bg-red-600">Completed</button>
-                                    </div>
-                                )}
                             </div>
                         </div>
                         <div className={`h-[85%] flex flex-col items-start justify-center text-lg font-sans p-5 ${activeTab === 1 ? 'block' : 'hidden'} bg-[var(--colorCode)] border-4 border-sky-400`}>

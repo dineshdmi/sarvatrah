@@ -14,13 +14,12 @@ const Footer = () => {
                     <div className="max-w-lg mx-auto">
                         <p className="font-bold text-lg mb-4 text-center">Why Choose Sarvatrah?</p>
                         <p className="text-sm leading-relaxed text-center">
-                            Established in 2000, Sarvatrah has since positioned itself as one of the leading companies, providing great offers, competitive airfares, exclusive discounts, and a seamless online booking experience to many of its customers. 
+                            Established in 2000, Sarvatrah has since positioned itself as one of the leading companies, providing great offers, competitive airfares, exclusive discounts, and a seamless online booking experience to many of its customers.
                         </p>
                     </div>
                 </div>
-
                 {/* Quick Links Section */}
-                <div className="flex flex-col items-center md:items-start my-6 md:my-0 md:w-1/4 mt-6 md:mt-0 ml-20 md:mr-2 md:ml-2">
+                <div className="flex flex-col items-center md:items-start my-6 md:my-0 md:w-1/4 mt-6 md:mt-0 md:mr-2 md:ml-32">
                     <h3 className="text-lg font-bold mb-2">Quick Links</h3>
                     <div className="flex flex-col space-y-2">
                         <Link to="/" className="text-black hover:text-blue-700">Home</Link>
